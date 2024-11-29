@@ -1,7 +1,7 @@
 def frec(x,t):
     if x==t:
         return 1
-    if x<t or x==13:
+    if x>t or str(x).count("5")>0:
         return 0
-    return frec(x-1,t)+frec(x-2,t)+frec(x//3,t)
-print(frec(19,6)*frec(6,4))
+    return frec(x+1,t)+frec(x+5,t)
+print(frec(1,30))
