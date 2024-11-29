@@ -3,6 +3,6 @@ def frec(x,t):
         return 1
     if x>t:
         return 0
-    return frec(x+1,t)+frec(int(str(x)+"1"),t)
+    return frec(x+1,t) + frec(x+10,t)
 
-print(frec(1,555))
+print(frec(15,28))
